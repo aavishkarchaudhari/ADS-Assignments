@@ -205,22 +205,30 @@ public class Median {
         Median median = new Median();
 
         while (true) {
+            System.out.println("\n1. Insert a value");
+            System.out.println("2. Find current median");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
 
             switch (choice) {
                 case 1:
+                    System.out.print("Enter value to insert: ");
                     int x = sc.nextInt();
                     median.insert(x);
-
-                    System.out.println(median.findMedian());
                     break;
 
                 case 2:
+                    System.out.println("Current Median: " + median.findMedian());
+                    break;
+
+                case 3:
                     sc.close();
                     System.out.println("Exiting...");
                     return;
 
                 default:
+                    System.out.println("Invalid choice. Please try again.");
                     break;
             }
         }
