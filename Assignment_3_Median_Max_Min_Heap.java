@@ -164,12 +164,12 @@ class MinHeap {
     }
 }
 
-public class Median {
+public class Assignment_3_Median_Max_Min_Heap {
 
     MaxHeap maxHeap;
     MinHeap minHeap;
 
-    Median() {
+    Assignment_3_Median_Max_Min_Heap() {
         maxHeap = new MaxHeap();
         minHeap = new MinHeap();
     }
@@ -202,7 +202,7 @@ public class Median {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Median median = new Median();
+        Assignment_3_Median_Max_Min_Heap median = new Assignment_3_Median_Max_Min_Heap();
 
         while (true) {
             System.out.println("\n1. Insert a value");
