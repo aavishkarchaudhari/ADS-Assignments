@@ -229,8 +229,9 @@ public class Assignment_1_Dictionary_BST {
                     break;
 
                 case 6:
-                    dict.copy();
+                    DictBST newDict = dict.copy();
                     System.out.println("Copied.");
+                    newDict.display();
                     break;
 
                 case 7:
